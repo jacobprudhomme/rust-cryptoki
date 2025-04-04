@@ -996,10 +996,12 @@ pub enum Mechanism<'a> {
 
     // NIST SP 800-108 KDF (aka KBKDF)
     /// NIST SP 800-108 KDF (aka KBKDF) mechanism in counter-mode
+    // KbkdfCounter(kbkdf::KbkdfParams<'a>),
     KbkdfCounter(kbkdf::KbkdfCounterParams<'a>),
     /// NIST SP 800-108 KDF (aka KBKDF) mechanism in feedback-mode
     KbkdfFeedback(kbkdf::KbkdfFeedbackParams<'a>),
     /// NIST SP 800-108 KDF (aka KBKDF) mechanism in double pipeline-mode
+    // KbkdfDoublePipeline(kbkdf::KbkdfParams<'a>),
     KbkdfDoublePipeline(kbkdf::KbkdfDoublePipelineParams<'a>),
 
     /// Vendor defined mechanism
